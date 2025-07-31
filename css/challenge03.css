@@ -1,0 +1,104 @@
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo {
+      background-color: #6c5b5b;
+      color: #fff;
+      display: flex;
+      padding: 10px;
+      align-items: start;
+      justify-content: start;
+      width: 100%;
+      height: 95px;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: 150px;
+      padding-bottom: 25px;
+    }
+
+    nav {
+      background-color: #6c5b5b;
+      padding: 5px 5px 20px 5px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: end;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 0 50px;
+      color: #fff;
+    } 
+
+    .container {
+      display: block;
+      text-align: center;
+      width: 100%;
+      height: 90px;
+    }
+
+    .container h2 {
+      padding-top: 20px;
+    }
+
+    p {
+      padding: 25px;
+    }
+   /* Mobile styles for screen sizes between 375px and 500px */ 
+   @media (min-width: 375px) and (max-width: 500px) {
+  
+    .off-screen-menu {
+      background-color: #6c5b5b;
+      height: 100vh;
+      max-width: 400px;
+      position: fixed;
+      top: 0;
+      left: -400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 2rem;
+      transition: .3s ease;
+    }
+    .off-screen-menu.active {
+      right: 0;
+    }
+    .ham-menu {
+      height: 50px;
+      width: 50px;
+      margin-left: auto;
+      position: relative;
+    }
+    .ham-menu span {
+      height: 5px;
+      width: 100%;
+      background-color: orange;
+      border-radius: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      transition: .3s ease;
+    }
+  
+  }
