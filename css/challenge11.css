@@ -27,7 +27,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff
+  color: rgb(192, 135, 133)
 }
 
 a:hover {
@@ -220,6 +220,10 @@ nav img {
   text-align: center;
   font-size: 2.5rem;
   transition: .3s ease;;
+}
+
+a {
+  color: #fff
 }
 .off-screen-menu.active {
   right: 0;
