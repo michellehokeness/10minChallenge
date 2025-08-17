@@ -129,9 +129,7 @@ footer img {
 
 @media screen and (min-width: 601px) and (max-width: 1920px) {
   /* Your CSS styles for this screen size range go here */
-  body {
-    background-color: rgb(191, 199, 199);
-  }
+  
   h1 {
     font-size: 2em;
   }
